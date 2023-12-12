@@ -6,11 +6,11 @@ const Navbar = () => {
      const links = <>
      <NavLink to={"/"}><li><a>Home</a></li></NavLink>
      <NavLink to={"/blog"}><li><a>Blog</a></li></NavLink>
-     <NavLink to={"/blog"}><li><a>Contact</a></li></NavLink>
+     <NavLink to={"/contact"}><li><a>Contact</a></li></NavLink>
      </>
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-amber-200">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -20,7 +20,7 @@ const Navbar = () => {
         {links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">Rian</a>
+    <a className="btn btn-ghost text-2xl font-bold">Rian</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
