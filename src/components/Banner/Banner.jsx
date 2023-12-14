@@ -14,7 +14,7 @@ const Banner = () => {
           websites..
         </p>
        <a download={true} href={pdf}>
-       <button  className="btn btn-outline text-lg">
+       <button  className="btn mt-4 btn-outline text-lg">
           <HiArrowDownTray /> Download Resume
         </button>
        </a>

@@ -1,23 +1,17 @@
+import { Link } from 'react-router-dom';
 import pic from '../../assets/1.jpg'
 import pic1 from '../../assets/2.jpg'
 import pic2 from '../../assets/3.jpg'
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 const Project = () => {
-  //  const [projects, setProjects] = useState([]);
 
-  //  useEffect(()=>{
-  //     fetch('project.json')
-  //     .then(res => res.json())
-  //     .then(data => setProjects(data))
-  //  },[])
-  //  console.log(projects);
   return (
     <div>
       <SectionTitle heading={"my latest projects"} />
 
       <div className='grid md:grid-cols-3 grid-cols-1 gap-4 '>
-        <div className="card card-compact  bg-base-100 shadow-xl">
+        <div className="card card-compact  bg-base-100 ">
           <figure>
             <img
              className='w-52 h-80'
@@ -29,7 +23,8 @@ const Project = () => {
             <h2 className="card-title">Diagnostic Center Project</h2>
           
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Live</button>
+            <Link to={'https://diagnostic-assignment-project.web.app/'}>
+              <button className="btn btn-primary">Live</button></Link>
             </div>
           </div>
         </div>
@@ -42,10 +37,11 @@ const Project = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Diagnostic Center Project</h2>
-          
+            <h2 className="card-title">Job buzz Project</h2>
+           
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Live</button>
+              <Link to={'https://job-buzz-projects.web.app/'}>
+              <button className="btn btn-primary">Live</button></Link>
             </div>
           </div>
         </div>
@@ -58,10 +54,11 @@ const Project = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Diagnostic Center Project</h2>
+            <h2 className="card-title">Health Care Project</h2>
           
             <div className="card-actions justify-end">
-              <button className="btn btn-primary">Live</button>
+            <Link to={'https://health-8-project.web.app/'}>
+              <button className="btn btn-primary">Live</button></Link>
             </div>
           </div>
         </div>

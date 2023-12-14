@@ -4,7 +4,7 @@ const Contact = () => {
   return (
     <div>
       <SectionTitle heading={"Contact With Me"}></SectionTitle>
-      <div className=" p-8 rounded-lg  w-[400px] md:w-[740px] lg:w-full 
+      <div className=" p-6 rounded-lg   w-[400px] md:w-[740px] lg:w-full 
       mx-auto flex items-center justify-center">
         <div className="p-2  bg-zinc-200  rounded-2xl w-full ">
           <form>
